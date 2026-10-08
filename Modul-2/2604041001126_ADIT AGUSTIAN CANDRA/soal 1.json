@@ -1,0 +1,294 @@
+{
+  "version": "7.0",
+  "nodes": [
+    {
+      "id": 1,
+      "type": "start",
+      "text": "Start",
+      "x": 430,
+      "y": 55,
+      "w": 150,
+      "h": 58
+    },
+    {
+      "id": 2,
+      "type": "input",
+      "text": "digit1;\ndigit2;\ndigit3;",
+      "x": 409,
+      "y": 147,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 3,
+      "type": "process",
+      "text": "npa= digit1*digit3",
+      "x": 421,
+      "y": 245,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 4,
+      "type": "decision",
+      "text": "digit2 % 2  = 0",
+      "x": 448,
+      "y": 372,
+      "w": 122,
+      "h": 122
+    },
+    {
+      "id": 5,
+      "type": "process",
+      "text": "nptp= npa - digit2",
+      "x": 708,
+      "y": 399,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 6,
+      "type": "process",
+      "text": "nptp = npa + 25",
+      "x": 123,
+      "y": 401,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 7,
+      "type": "decision",
+      "text": "nptp % 3  = 0",
+      "x": 448,
+      "y": 551,
+      "w": 122,
+      "h": 122
+    },
+    {
+      "id": 8,
+      "type": "process",
+      "text": "nptk = npa*2",
+      "x": 161,
+      "y": 616,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 9,
+      "type": "process",
+      "text": "nptk= npa / 3",
+      "x": 678,
+      "y": 617,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 10,
+      "type": "decision",
+      "text": "nptk> 50",
+      "x": 450,
+      "y": 735,
+      "w": 122,
+      "h": 122
+    },
+    {
+      "id": 11,
+      "type": "decision",
+      "text": "nptk > 20",
+      "x": 449,
+      "y": 932,
+      "w": 122,
+      "h": 122
+    },
+    {
+      "id": 12,
+      "type": "process",
+      "text": "kategori =\"Kategori A\"",
+      "x": 686,
+      "y": 882,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 13,
+      "type": "process",
+      "text": "kategori = \"Kategori B\"",
+      "x": 728,
+      "y": 995,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 14,
+      "type": "process",
+      "text": "kategori = \"password ditolak\"",
+      "x": 124,
+      "y": 1060,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 15,
+      "type": "decision",
+      "text": "nptk % 2  = 0",
+      "x": 427,
+      "y": 1205,
+      "w": 122,
+      "h": 122
+    },
+    {
+      "id": 16,
+      "type": "process",
+      "text": "siklus =\"siklus ganjil\"",
+      "x": 58,
+      "y": 1335,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 17,
+      "type": "process",
+      "text": "siklus =\"siklus genap\"",
+      "x": 732,
+      "y": 1313,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 18,
+      "type": "output",
+      "text": "\"digit1 =\" + digit1;\n\"digit2 =\" + digit2;\n\"digit3 =\" + digit3;\n\"npa =\" + npa;\n\"nptp=\" + nptp;\n\"nptk=\" + nptk;\n\"kategori=\" + kategori;\n\"siklus=\" + siklus;",
+      "x": 382,
+      "y": 1434,
+      "w": 265,
+      "h": 145
+    },
+    {
+      "id": 19,
+      "type": "end",
+      "text": "End",
+      "x": 441,
+      "y": 1633,
+      "w": 150,
+      "h": 58
+    }
+  ],
+  "edges": [
+    {
+      "from": 1,
+      "to": 2,
+      "branch": null
+    },
+    {
+      "from": 2,
+      "to": 3,
+      "branch": null
+    },
+    {
+      "from": 3,
+      "to": 4,
+      "branch": null
+    },
+    {
+      "from": 4,
+      "to": 6,
+      "branch": "false"
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "branch": "true"
+    },
+    {
+      "from": 5,
+      "to": 7,
+      "branch": null
+    },
+    {
+      "from": 6,
+      "to": 7,
+      "branch": null
+    },
+    {
+      "from": 7,
+      "to": 9,
+      "branch": "true"
+    },
+    {
+      "from": 7,
+      "to": 8,
+      "branch": "false"
+    },
+    {
+      "from": 9,
+      "to": 10,
+      "branch": null
+    },
+    {
+      "from": 8,
+      "to": 10,
+      "branch": null
+    },
+    {
+      "from": 10,
+      "to": 11,
+      "branch": "false"
+    },
+    {
+      "from": 11,
+      "to": 14,
+      "branch": "false"
+    },
+    {
+      "from": 10,
+      "to": 12,
+      "branch": "true"
+    },
+    {
+      "from": 11,
+      "to": 13,
+      "branch": "true"
+    },
+    {
+      "from": 13,
+      "to": 15,
+      "branch": null
+    },
+    {
+      "from": 12,
+      "to": 15,
+      "branch": null
+    },
+    {
+      "from": 14,
+      "to": 15,
+      "branch": null
+    },
+    {
+      "from": 15,
+      "to": 17,
+      "branch": "true"
+    },
+    {
+      "from": 15,
+      "to": 16,
+      "branch": "false"
+    },
+    {
+      "from": 17,
+      "to": 18,
+      "branch": null
+    },
+    {
+      "from": 16,
+      "to": 18,
+      "branch": null
+    },
+    {
+      "from": 18,
+      "to": 19,
+      "branch": null
+    }
+  ],
+  "nextId": 20
+}
